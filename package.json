@@ -1,10 +1,10 @@
 {
-  "name": "boilerplate-react-webpack",
-  "version": "0.2.2",
-  "description": "A webpack React starter",
-  "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
+  "name": "peer-posties",
+  "version": "0.1.0",
+  "description": "Peer-to-peer delivery service focused on NZ neighborhoods",
+  "repository": "https://github.com/andria-hibe/Peer-Posties.git",
   "main": "server/index.js",
-  "author": "EDA",
+  "author": "Peer Posties Team",
   "license": "ISC",
   "scripts": {
     "client": "webpack-dev-server --hot --inline",
@@ -32,8 +32,11 @@
     ]
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "knex": "^0.20.15",
     "npm-run-all": "^4.1.5",
+    "sqlite3": "^4.1.1",
     "superagent": "^5.2.2"
   },
   "devDependencies": {
@@ -51,6 +54,10 @@
     "nodemon": "^2.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
