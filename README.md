@@ -1,22 +1,16 @@
-# A starter webpack project for React
+# Peer Posties NZ - peer-to-peer delivery
 
-This is a starter project that uses webpack to transpile and bundle ES6 React code. To use, consider these steps:
+This is a project that was started during Hack the Crisis NZ 2020 aimed at finding innovative solutions to problems brought about by COVID-19.
 
-* Fork this repo
-* Rename your repo according to the app you're building
 
-```sh
-git clone https://github.com/[your-account]/[your-app].git
-cd [your-app] && npm i
-```
-
+## Run the project
 To start the development server with a watcher that rebuilds your code, run `npm run dev`. The assets built by webpack are placed in `server/public`. This folder is defined as a static folder in an Express.js server that can be started with `npm run server`.
 
 Additional components should be placed in `client/components`.
 
 ## Separate client/server
 
-The boilerplate is also set up to host the client using `webpack-dev-server` with hot module reloading etc. To use this method, in one terminal run:
+The client is also set up to be hosted using `webpack-dev-server` with hot module reloading etc. To use this method, in one terminal run:
 ```sh
 npm run client
 ```
