@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
+import { connect } from "react-redux";
+
 import {
   geocodeByAddress,
   geocodeByPlaceId,
   getLatLng,
 } from "react-places-autocomplete";
+
+import PickupLocation from'./PickupLocation'
+import DropoffLocation from './DropoffLocation'
 
 export default function FormFields() {
   const [validated, setValidated] = useState(false);
@@ -18,6 +23,8 @@ export default function FormFields() {
 
     setValidated(true);
   };
+// pick up and drop off addresses need to be linked to the form. 
+
   return (
     <div>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
@@ -45,6 +52,7 @@ export default function FormFields() {
           <Col sm={10}>
             <Form.Control required size="lg" as="textarea" rows="1" />
           </Col>
+          <PickupLocation></PickupLocation>
         </Form.Group>
 
         <Form.Group as={Row} controlId="exampleForm.ControlTextarea1">
@@ -54,6 +62,7 @@ export default function FormFields() {
           <Col sm={10}>
             <Form.Control required size="lg" as="textarea" rows="1" />
           </Col>
+          <DropoffLocation></DropoffLocation>
         </Form.Group>
 
         <Form.Group as={Row} controlId="exampleForm.ControlSelect2">

@@ -1,6 +1,6 @@
 import React, { Component} from 'react'
 
-import PlacesAutocomplete from 'react-places-autocomplete'
+import PlacesAutocomplete, { geocodeByAddress } from 'react-places-autocomplete'
 
 
 export class PickupLocation extends Component{
@@ -15,6 +15,7 @@ export class PickupLocation extends Component{
     handleSelect = address => {
     geocodeByAddress(address)
         .then(results => getLatLng(results[0]))
+        // need to add this to the redux store
         .then(latLng => console.log('Success', latLng))
         .catch(error => console.error('Error', error));
     }
