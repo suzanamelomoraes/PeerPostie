@@ -1,8 +1,9 @@
 import React from 'react'
+import FormFields from './FormFields'
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <FormFields />
   )
 }
 
