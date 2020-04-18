@@ -1,9 +1,9 @@
 exports.up = knex =>
   knex.schema.createTable('prices', (table) => {
     table.increments('id').primary()
-    table.string('bike')
-    table.string('car')
-    table.string('urgent')
+    table.numeric('bike')
+    table.numeric('car')
+    table.numeric('urgent')
 
   })
 
