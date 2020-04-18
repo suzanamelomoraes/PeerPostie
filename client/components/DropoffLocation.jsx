@@ -3,7 +3,7 @@ import React, { Component} from 'react'
 import PlacesAutocomplete from 'react-places-autocomplete'
 
 
-export class PickupLocation extends Component{
+export class DropoffLocation extends Component{
     constructor(props){
         super(props)
         this.state= { address: ''}
@@ -63,4 +63,4 @@ export class PickupLocation extends Component{
     }
 }
 
-export default PickupLocation
+export default DropoffLocation
