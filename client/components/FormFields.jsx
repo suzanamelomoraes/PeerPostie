@@ -1,22 +1,22 @@
-import React, { useState } from "react";
-import { Form, Row, Col, Button, Container } from "react-bootstrap";
+import React, { useState } from 'react';
+import { Form, Row, Col, Button, Container } from 'react-bootstrap';
 import {
   geocodeByAddress,
   geocodeByPlaceId,
-  getLatLng,
-} from "react-places-autocomplete";
+  getLatLng
+} from 'react-places-autocomplete';
 
-export default function FormFields() {
-  const [validated, setValidated] = useState(false);
+export default function FormFields () {
+  const [validated, setValidated] = useState(false)
 
   const handleSubmit = (event) => {
-    const form = event.currentTarget;
+    const form = event.currentTarget
     if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
+      event.preventDefault()
+      event.stopPropagation()
     }
 
-    setValidated(true);
+    setValidated(true)
   };
   return (
     <div>
@@ -134,5 +134,5 @@ export default function FormFields() {
         </Col>
       
     </div>
-  );
+  )
 }
