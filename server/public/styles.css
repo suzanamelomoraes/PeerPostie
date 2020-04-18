@@ -36,7 +36,7 @@
   width: 305px;
   height: 60px;
   border: none;
-  filter: brightness(130%);
+  filter: brightness(105%)
 }
 
 .book-button {
@@ -55,7 +55,7 @@
   height: 60px;
   font-weight: bold;
   border: none;
-  filter: brightness(130%);
+  filter: brightness(110%)
 }
 
 .button-group {
@@ -77,8 +77,9 @@
   width: 7rem;
 }
 
-body {
+body{
   background-color: #004ea8;
+  font-family: raleway
 }
 
 /* Footer style */
