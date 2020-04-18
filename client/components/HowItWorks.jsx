@@ -1,25 +1,35 @@
 import React from 'react'
-import { Grid, Row, Col, Button ,Container, Image} from "react-bootstrap";
+import { Row, Col, Container, Image } from 'react-bootstrap'
 
 const HowItWorks = () => {
   return (
-    <div style={{ paddingTop: 150}} class="text-white">
-    <Container >
-      <Row style={{textAlign: "center", height: '10rem'}}>
-       <Col><h3>How it works</h3></Col>
-     </Row>
-    <Row>
-      <Col><Image src='/images/phone.png' rounded width={100} height={160}/><Image src='/images/peer-postie-icon.png' rounded width={171} height={160}/></Col>
-      <Col xs={5}><Image src='/images/car.png' rounded width={140} height={160}/><Image src='/images/bike.png' rounded width={171} height={160}/></Col>
-      <Col><Image src='/images/door-flowers.png' rounded width={171} height={160}/></Col>
-    </Row>
-    <Row>
-     <Col><h4>Request a PeerPostie</h4></Col>
-     <Col xs={5}><h4>Select your delivery style</h4></Col>
-     <Col><h4>Item delivered</h4></Col>
-    </Row>
-  </Container>
-  </div>
+    <div style={{ paddingTop: 20 }} className="text-white">
+      <Container style={{ paddingBottom: 20 }} fluid>
+
+        <Row style={{ textAlign: 'center', height: '5rem' }}>
+          <Col><h1>How it works</h1></Col>
+        </Row>
+
+        <Row style={{ paddingBottom: 20, textAlign: 'center' }}>
+          <Col><Image src='/images/phone.png' fluid style={{ maxWidth: '25%' }}/></Col>
+          <Col><Image src='flowers.png' fluid style={{ maxWidth: '30%' }}/></Col>
+          <Col style={{ paddingTop: '4%' }}><Image src='car-guy-phone.png' fluid style={{ maxWidth: '45%' }}/></Col>
+          <Col><Image src='/images/door-flowers.png' fluid style={{ maxWidth: '35%' }}/></Col>
+        </Row>
+
+        <Row style={{ textAlign: 'center' }}>
+          <Col><h4>Request a PeerPostie</h4></Col>
+          <Col><h4>Select delivery style</h4></Col>
+          <Col><h4>Item Transported</h4></Col>
+          <Col><h4>Item delivered</h4></Col>
+        </Row>
+
+        <Row style={{ textAlign: 'center', height: '5rem', color: '#D9FF00', textDecoration: 'underline', paddingTop: 30 }}>
+          <Col><h3>Watch Video</h3></Col>
+        </Row>
+
+      </Container>
+    </div>
   )
 }
 

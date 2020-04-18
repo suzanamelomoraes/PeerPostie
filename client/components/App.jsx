@@ -1,12 +1,10 @@
 import React from 'react'
-import FormFields from './FormFields';
-import NavBar from './NavBar'
+import MainSection from './MainSection'
 
 const App = () => {
   return (
     <>
-      <NavBar />
-      <FormFields />
+      <MainSection/>
     </>
   )
 }
