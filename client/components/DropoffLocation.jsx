@@ -1,5 +1,5 @@
 import React, { Component} from 'react'
-import connect from 'react-redux'
+import { connect } from 'react-redux'
 
 import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-autocomplete'
 
@@ -36,7 +36,7 @@ export class DropoffLocation extends Component {
             <div>
               <input
                 {...getInputProps({
-                  placeholder: 'Search Places ...',
+                  placeholder: 'To ...',
                   className: 'location-search-input'
                 })}
               />

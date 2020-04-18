@@ -1,5 +1,5 @@
 import React, { Component} from 'react'
-import connect from 'react-redux'
+import { connect }from 'react-redux'
 
 import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-autocomplete'
 
@@ -36,7 +36,7 @@ export class PickupLocation extends Component {
             <div>
               <input
                 {...getInputProps({
-                  placeholder: 'Search Places ...',
+                  placeholder: 'From ...',
                   className: 'location-search-input'
                 })}
               />
@@ -73,5 +73,5 @@ const matchDispatchToProps = {
   addPickupLocation
 }
 
-export default PickupLocation
-//export default connect(null, matchDispatchToProps)(PickupLocation)
+//export default PickupLocation
+export default connect(null, matchDispatchToProps)(PickupLocation)

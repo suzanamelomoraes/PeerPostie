@@ -24,24 +24,7 @@ export function FormFields() {
       <div className="request-form form-border">
         <div className="form-title">I want to send a...</div>
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
-          {/* <Form.Group as={Row} controlId="exampleForm.ControlSelect1">
-            <Form.Label className='form-text' column="lg" lg={5}>
-              Pick Up Style
-            </Form.Label>
-            <Col sm={7}>
-              <Form.Control
-                required
-                placeholder="Select..."
-                size="lg"
-                as="select"
-              >
-                <option>Person</option>
-                <option>Vehicle</option>
-              </Form.Control>
-            </Col>
-          </Form.Group> */}
-
-          <Form.Group className='button-group' as={Row} controlId="exampleForm.ControlTextarea1">
+               <Form.Group className='button-group' as={Row} controlId="exampleForm.ControlTextarea1">
             <Col sm={6}>
               <Button variant="outline-primary">
                 <img
@@ -57,7 +40,7 @@ export function FormFields() {
                   className="button-image"
                   src="-car-.png"
                   alt="large package"
-                ></img>
+                  ></img>
               </Button>
             </Col>
           </Form.Group>
@@ -71,7 +54,8 @@ export function FormFields() {
                 as="textarea"
                 placeholder="From..."
                 rows="1"
-              />
+                />
+                <PickupLocation/>
         
 
             </Col>
@@ -85,8 +69,9 @@ export function FormFields() {
                 as="textarea"
                 placeholder="To..."
                 rows="1"
-              /> 
+                /> 
              
+                <DropoffLocation/>
               
             </Col>
           </Form.Group>
@@ -127,8 +112,6 @@ export function FormFields() {
             </Button>
           </Form.Group>
         </Form>
-        <DropoffLocation/>
-        <PickupLocation/>
       </div>
     </div>
   )
