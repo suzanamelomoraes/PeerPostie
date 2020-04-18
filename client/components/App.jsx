@@ -1,11 +1,11 @@
 import React from "react";
-import FormFields from "./FormFields";
 import Footer from "./Footer";
+import MainSection from "./MainSection";
 
 const App = () => {
   return (
     <>
-      <FormFields />
+      <MainSection />
       <Footer />
     </>
   );
