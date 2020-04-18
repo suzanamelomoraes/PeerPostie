@@ -1,9 +1,13 @@
 import React from 'react'
 import FormFields from './FormFields'
+import MainSection from './MainSection'
 
 const App = () => {
   return (
-    <FormFields />
+    <>
+      <MainSection/>
+      <FormFields />
+    </>
   )
 }
 
