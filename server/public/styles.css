@@ -1,5 +1,32 @@
 /* when adding styles please place within a grouping with a header ie all form styles to be kept under /* Form */
 
+/* NavBar */
+
+.navbar{
+    background-color:#D9FF00  ;
+    height: 77px;
+    font-family: Raleway;
+    width:100%
+}
+.logo-nav {
+  width: auto;
+  height: 110px;
+  margin-top: 2rem;
+}
+
+.logo-title{
+    font-weight: bolder;
+    font-size: 1.8rem;
+    color:#004ea8;
+}
+
+.nav-links {
+    font-size: 1.5rem;
+    color:#004ea8;
+    padding-left: 140px;
+    font-weight: bolder;
+}
+
 /* Form */
 
 .request-form {
@@ -8,7 +35,7 @@
 }
 
 .width {
-    max-width: 355px;
+  max-width: 355px;
 }
 
 .form-border {
@@ -40,12 +67,12 @@
   width: 305px;
   height: 60px;
   border: none;
-  filter: brightness(105%)
+  filter: brightness(105%);
 }
 
 .book-button {
   color: white;
-  background-color: #CF02BC;
+  background-color: #cf02bc;
   width: 305px;
   height: 60px;
   font-weight: bold;
@@ -54,12 +81,12 @@
 
 .book-button:hover {
   color: white;
-  background-color: #CF02BC;
+  background-color: #cf02bc;
   width: 305px;
   height: 60px;
   font-weight: bold;
   border: none;
-  filter: brightness(110%)
+  filter: brightness(110%);
 }
 
 .button-group {
@@ -81,7 +108,7 @@
   width: 7rem;
 }
 
-body{
+body {
   background-color: #004ea8;
-  font-family: raleway
+  font-family: raleway;
 }
