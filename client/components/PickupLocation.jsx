@@ -1,6 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component} from 'react'
+import { connect }from 'react-redux'
 
-import PlacesAutocomplete from 'react-places-autocomplete'
+import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-autocomplete'
+
+import { addPickupLocation } from '../actions/pickupLocation'
 
 export class PickupLocation extends Component {
   constructor (props) {
@@ -13,10 +16,8 @@ export class PickupLocation extends Component {
       }
 
     handleSelect = address => {
-      geocodeByAddress(address)
-        .then(results => getLatLng(results[0]))
-        .then(latLng => console.log('Success', latLng))
-        .catch(error => console.error('Error', error))
+      this.setState({ address })
+      this.props.addPickupLocation(address)
     }
 
     render () {
@@ -30,7 +31,7 @@ export class PickupLocation extends Component {
             <div>
               <input
                 {...getInputProps({
-                  placeholder: 'Search Places ...',
+                  placeholder: 'From ...',
                   className: 'location-search-input'
                 })}
               />
@@ -55,12 +56,17 @@ export class PickupLocation extends Component {
                     </div>
                   )
                     })}
-              </div>
-            </div>
-          )}
-        </PlacesAutocomplete>
-      )
+                  </div>
+                </div>
+              )}
+            </PlacesAutocomplete> 
+          )
     }
 }
 
-export default PickupLocation
+const matchDispatchToProps = {
+  addPickupLocation
+}
+
+//export default PickupLocation
+export default connect(null, matchDispatchToProps)(PickupLocation)

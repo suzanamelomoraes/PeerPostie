@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import { Form, Row, Col, Button, Container } from 'react-bootstrap';
-import {
-  geocodeByAddress,
-  geocodeByPlaceId,
-  getLatLng
-} from 'react-places-autocomplete';
+import React, { useState } from "react";
+import { Form, Row, Col, Button } from "react-bootstrap";
+import { connect } from "react-redux";
 
-export default function FormFields () {
-  const [validated, setValidated] = useState(false)
+import PickupLocation from'./PickupLocation'
+import DropoffLocation from './DropoffLocation'
+
+export function FormFields() {
+  const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
     const form = event.currentTarget
@@ -18,6 +17,8 @@ export default function FormFields () {
 
     setValidated(true)
   };
+
+
   return (
     <div>
       
@@ -79,6 +80,7 @@ export default function FormFields () {
                   placeholder="From..."
                   rows="1"
                 />
+                <PickupLocation/>
               </Col>
             </Form.Group>
             <Form.Group as={Row} controlId="exampleForm.ControlTextarea2">
@@ -91,6 +93,7 @@ export default function FormFields () {
                   placeholder="To..."
                   rows="1"
                 />
+                <DropoffLocation/>
               </Col>
             </Form.Group>
 
@@ -136,3 +139,14 @@ export default function FormFields () {
     </div>
   )
 }
+
+const mapStateToProps = state => {
+  return{
+    pickupAddress: state.pickupAddress,
+    pickupLatLng: state.pickupLatLng,
+    dropoffLatLng: state.dropLatLng,
+    dropoffAddress: state.dropoffAddress
+  }
+}
+
+export default connect(mapStateToProps)(FormFields)

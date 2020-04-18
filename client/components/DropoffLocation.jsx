@@ -1,6 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component} from 'react'
+import { connect } from 'react-redux'
 
-import PlacesAutocomplete from 'react-places-autocomplete'
+import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-autocomplete'
+
+import { addDropoffLocation } from '../actions/dropoffLocation'
 
 export class DropoffLocation extends Component {
   constructor (props) {
@@ -13,10 +16,8 @@ export class DropoffLocation extends Component {
       }
 
     handleSelect = address => {
-      geocodeByAddress(address)
-        .then(results => getLatLng(results[0]))
-        .then(latLng => console.log('Success', latLng))
-        .catch(error => console.error('Error', error))
+      this.setState({ address })
+      this.props.addDropoffLocation(address)
     }
 
     render () {
@@ -30,7 +31,7 @@ export class DropoffLocation extends Component {
             <div>
               <input
                 {...getInputProps({
-                  placeholder: 'Search Places ...',
+                  placeholder: 'To ...',
                   className: 'location-search-input'
                 })}
               />
@@ -63,4 +64,9 @@ export class DropoffLocation extends Component {
     }
 }
 
-export default DropoffLocation
+const matchDispatchToProps = {
+  addDropoffLocation
+}
+
+export default connect(null, matchDispatchToProps)(DropoffLocation)
+
