@@ -11,19 +11,26 @@
 .logo-nav {
   width: auto;
   height: 110px;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-left: 260px;
 }
 
 .logo-title{
     font-weight: bolder;
-    font-size: 1.8rem;
-    color:#004ea8;
+    font-size: 2rem;
+    color:#004ea8; 
+    font-family: Raleway;
+
+}
+
+.nav-title {
+    margin-left: -80px;
 }
 
 .nav-links {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color:#004ea8;
-    padding-left: 140px;
+    padding-left: 100px;
     font-weight: bolder;
 }
 

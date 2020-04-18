@@ -5,7 +5,7 @@ import { Nav, Row, Col } from "react-bootstrap";
 export default function NavBar() {
     return (
         <Navbar className='navbar' sticky="top"  expand="lg">
-          <Col lg={6}>
+          <Col lg={4}>
           <Navbar.Brand href="#home">
             <img
               src="-peer-postie-icon.png"
@@ -13,11 +13,13 @@ export default function NavBar() {
               alt="PeerPostie logo"
           />
           </Navbar.Brand>
+          
+          </Col>
+          <Col className='nav-title' lg={4}>
+          <Navbar.Brand  className='logo-title' href="#home">PeerPostie</Navbar.Brand>
           </Col>
           
-          <Navbar.Brand  className='logo-title' href="#home">PeerPostie</Navbar.Brand>
-          
-          <Col className='nav-links' lg={6}>
+          <Col className='nav-links' lg={4}>
         <Navbar.Toggle />
         <Navbar.Collapse id="basic-navbar-nav" >
             <Nav inline="true">
