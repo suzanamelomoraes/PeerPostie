@@ -1,10 +1,16 @@
-import React from "react";
-import MainSection from "./MainSection";
+
+import React from 'react'
+import MainSection from './MainSection'
+import NavBar from './NavBar'
+
 
 const App = () => {
   return (
     <>
-      <MainSection />
+
+    <NavBar />
+      <MainSection/>
+
     </>
   );
 };

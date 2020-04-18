@@ -1,10 +1,48 @@
 /* when adding styles please place within a grouping with a header ie all form styles to be kept under /* Form */
 
+/* NavBar */
+
+.navbar{
+    background-color:#D9FF00  ;
+    height: 77px;
+    font-family: Raleway;
+    width:100%;
+}
+.logo-nav {
+  width: auto;
+  height: 7rem;
+  margin-top: 3rem;
+  margin-left: 260px;
+}
+
+.logo-title{
+    font-weight: bolder;
+    font-size: 2rem;
+    color:#004ea8; 
+    font-family: Raleway;
+
+}
+
+.nav-title {
+    margin-left: -80px;
+}
+
+.nav-links {
+    font-size: 1.6rem;
+    color:#004ea8;
+    padding-left: 100px;
+    font-weight: bolder;
+}
+
 /* Form */
 
 .request-form {
-  width: 344px;
+  /* max-width: 344px; */
   margin: 2rem;
+}
+
+.width {
+  max-width: 355px;
 }
 
 .form-border {
@@ -36,7 +74,7 @@
   width: 305px;
   height: 60px;
   border: none;
-  filter: brightness(105%)
+  filter: brightness(105%);
 }
 
 .book-button {
@@ -55,7 +93,7 @@
   height: 60px;
   font-weight: bold;
   border: none;
-  filter: brightness(110%)
+  filter: brightness(110%);
 }
 
 .button-group {
@@ -77,9 +115,9 @@
   width: 7rem;
 }
 
-body{
+body {
   background-color: #004ea8;
-  font-family: raleway
+  font-family: raleway;
 }
 
 /* Footer style */
