@@ -119,8 +119,10 @@ export function FormFields() {
 
 const mapStateToProps = state => {
   return{
-    pickupLocation: state.pickupLocation,
-    dropoffLocation: state.dropoffLocation
+    pickupAddress: state.pickupAddress,
+    pickupLatLng: state.pickupLatLng,
+    dropoffLatLng: state.dropLatLng,
+    dropoffAddress: state.dropoffAddress
   }
 }
 
