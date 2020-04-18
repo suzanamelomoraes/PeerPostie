@@ -1,9 +1,13 @@
 import React from 'react'
-import FormFields from './FormFields'
+import FormFields from './FormFields';
+import NavBar from './NavBar'
 
 const App = () => {
   return (
-    <FormFields />
+    <>
+      <NavBar />
+      <FormFields />
+    </>
   )
 }
 
