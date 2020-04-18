@@ -9,13 +9,13 @@ export function FormFields() {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
-    const form = event.currentTarget;
+    const form = event.currentTarget
     if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
+      event.preventDefault()
+      event.stopPropagation()
     }
 
-    setValidated(true);
+    setValidated(true)
   };
 
 
@@ -131,7 +131,7 @@ export function FormFields() {
         <PickupLocation/>
       </div>
     </div>
-  );
+  )
 }
 
 const mapStateToProps = state => {
