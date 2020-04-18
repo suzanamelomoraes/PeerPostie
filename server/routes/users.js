@@ -1,11 +1,19 @@
 const express = require('express')
 
+const db = require('../db/users')
+
 const router = express.Router()
 
-router.get('/', (req, res) => {
-  const userId = req.body.id
+const sendGenericErrorMessage = (res) => {
+  res.status(500).send(
+    "An unexpected error has occurred and we're looking into it"
+  )
+}
 
-  return db.getUserById(userId) //need to import and create
+router.get('/', (req, res) => {
+  const { userId } = req.body
+
+  return db.getUserById(userId)
     .then(user => res.json(user))
     .catch(() => sendGenericErrorMessage(res))
 })

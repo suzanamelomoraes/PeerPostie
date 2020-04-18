@@ -11,7 +11,7 @@ server.use(express.json())
 server.use(express.static(path.join(__dirname, './public')))
 server.use(cors())
 
-server.use('api/users', users)
-server.use('api/delivery', delivery)
+server.use('/api/users', users)
+server.use('/api/delivery', delivery)
 
 module.exports = server
