@@ -64,21 +64,21 @@ export function FormFields() {
 
           <Form.Group as={Row} controlId="exampleForm.ControlTextarea2">
             <Col sm={12}>
-              {/*<Form.Control
+              <Form.Control
                 className="form-text no-border"
                 required
                 size="lg"
                 as="textarea"
                 placeholder="From..."
                 rows="1"
-              /> */}
-              <PickupLocation/>
+              />
+        
 
             </Col>
           </Form.Group>
           <Form.Group as={Row} controlId="exampleForm.ControlTextarea2">
             <Col sm={12}>
-              {/* <Form.Control
+              <Form.Control
                 className="form-text no-border"
                 required
                 size="lg"
@@ -86,8 +86,8 @@ export function FormFields() {
                 placeholder="To..."
                 rows="1"
               /> 
-              */}
-              <DropoffLocation/>
+             
+              
             </Col>
           </Form.Group>
 
@@ -127,6 +127,8 @@ export function FormFields() {
             </Button>
           </Form.Group>
         </Form>
+        <DropoffLocation/>
+        <PickupLocation/>
       </div>
     </div>
   );

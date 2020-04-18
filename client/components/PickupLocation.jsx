@@ -1,7 +1,7 @@
 import React, { Component} from 'react'
 import connect from 'react-redux'
 
-import PlacesAutocomplete, { geocodeByAddress } from 'react-places-autocomplete'
+import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-autocomplete'
 
 import { addPickupLocation } from '../actions/pickupLocation'
 
@@ -16,9 +16,12 @@ export class PickupLocation extends Component{
       }
     
     handleSelect = address => {
+      this.setState({ address })
     geocodeByAddress(address)
         .then(results => getLatLng(results[0]))
-        .then(({lat, lng}) => addPickupLocation({address,lat,lng}))
+        .then(({lat, lng}) => 
+        //console.log({lat,lng}))
+        addPickupLocation({address,lat,lng}))
         .catch(error => console.error('Error', error));
     }
 
@@ -61,7 +64,7 @@ export class PickupLocation extends Component{
                   </div>
                 </div>
               )}
-            </PlacesAutocomplete>
+            </PlacesAutocomplete> 
           )
     }
 }
@@ -70,4 +73,5 @@ const matchDispatchToProps = {
   addPickupLocation
 }
 
-export default connect (null, matchDispatchToProps)(PickupLocation)
+export default PickupLocation
+//export default connect(null, matchDispatchToProps)(PickupLocation)
