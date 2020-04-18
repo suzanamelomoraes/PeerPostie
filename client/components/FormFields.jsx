@@ -23,7 +23,7 @@ export default function FormFields() {
 
     setValidated(true);
   };
-// pick up and drop off addresses need to be linked to the form. 
+
 
   return (
     <div>
