@@ -1,6 +1,10 @@
 import React, { Component } from "react";
-import { Form } from "react-bootstrap";
-import PlacesAutocomplete from 'react-places-autocomplete'
+import { Form, Row, Col } from "react-bootstrap";
+import {
+  geocodeByAddress,
+  geocodeByPlaceId,
+  getLatLng,
+} from 'react-places-autocomplete';
 
 
 export default class FormFields extends Component {
@@ -8,30 +12,38 @@ export default class FormFields extends Component {
     return (
       <div>
         <Form>
-          <Form.Group controlId="exampleForm.ControlSelect1">
-            <Form.Label>Pick Up Style</Form.Label>
-            <Form.Control as="select">
+          <Form.Group as={Row} controlId="exampleForm.ControlSelect1">
+            <Form.Label column sm={2} >Pick Up Style</Form.Label>
+            <Col sm={10}>
+            <Form.Control placeholder="Select..." size="lg"  as="select" >
               <option>Person</option>
               <option>Vehicle</option>
             </Form.Control>
+            </Col>
           </Form.Group>
 
-          <Form.Group controlId="exampleForm.ControlTextarea1">
-            <Form.Label>From</Form.Label>
-            <Form.Control as="textarea" rows="1" />
+          <Form.Group as={Row} controlId="exampleForm.ControlTextarea1">
+            <Form.Label column sm={2}>From</Form.Label>
+            <Col sm={10}>
+            <Form.Control size="lg" as="textarea" rows="1" />
+            </Col>
           </Form.Group>
 
-          <Form.Group controlId="exampleForm.ControlTextarea2">
-            <Form.Label>To</Form.Label>
-            <Form.Control as="textarea" rows="1"  />
+          <Form.Group as={Row} controlId="exampleForm.ControlTextarea1">
+            <Form.Label column sm={2}>To</Form.Label>
+            <Col sm={10}>
+            <Form.Control size="lg" as="textarea" rows="1" />
+            </Col>
           </Form.Group>
 
-          <Form.Group controlId="exampleForm.ControlSelect2">
-            <Form.Label>When</Form.Label>
-            <Form.Control as="select">
+          <Form.Group as={Row} controlId="exampleForm.ControlSelect2">
+            <Form.Label column sm={2}>When</Form.Label>
+            <Col sm={10}>
+            <Form.Control size="lg" as="select" type="text" placeholder="Select..." >
               <option>ASAP</option>
               <option>Today</option>
             </Form.Control>
+            </Col>
           </Form.Group>
         </Form>
       </div>
