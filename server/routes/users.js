@@ -3,7 +3,11 @@ const express = require('express')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  //GET current user data
+  const userId = req.body.id
+
+  return db.getUserById(userId) //need to import and create
+    .then(user => res.json(user))
+    .catch(() => sendGenericErrorMessage(res))
 })
 
 router.get(':id', (req, res) => {
