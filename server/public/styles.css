@@ -2,7 +2,7 @@
 
 /* NavBar */
 
-.navbar{
+.navbar-c{
     background-color:#D9FF00  ;
     height: 77px;
     font-family: Raleway;
@@ -127,6 +127,10 @@ body {
     height: auto;
 }
 
+.list-inline-item{
+    font-size: 1rem;
+}
+
 .img-footer:hover {
     opacity: 0.7;
 }
@@ -158,5 +162,11 @@ body {
 .navbar a:hover {
     opacity: 0.7;
   }
+
+.footer-style {
+    background-color: rgb(0, 66, 143);
+    padding: 0 2rem 0 2rem;
+    
+}
 
 /* Footer Style End */

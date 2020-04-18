@@ -5,7 +5,7 @@ import { Nav, Col, Row } from "react-bootstrap";
 export default function NavBar() {
     return (
       <div>
-        <Navbar className='navbar' fixed="top" >
+        <Navbar className='navbar-c' fixed="top" >
           
           <Col  md={2} lg={4}>
           <Navbar.Brand href="#home">
