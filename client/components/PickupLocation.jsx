@@ -19,9 +19,9 @@ export class PickupLocation extends Component {
       this.setState({ address })
     geocodeByAddress(address)
         .then(results => getLatLng(results[0]))
-        .then(({lat, lng}) => 
-        //console.log({lat,lng}))
-        addPickupLocation({address,lat,lng}))
+        .then(({lat, lng}) => {
+        this.props.addPickupLocation([address,lat,lng])
+        })       
         .catch(error => console.error('Error', error));
     }
 

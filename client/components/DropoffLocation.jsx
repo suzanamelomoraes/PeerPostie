@@ -19,9 +19,11 @@ export class DropoffLocation extends Component {
       this.setState({ address })
     geocodeByAddress(address)
         .then(results => getLatLng(results[0]))
-        .then(({lat, lng}) => 
-        //console.log(lat,lng))
-        addDropoffLocation({address,lat,lng}))
+        .then(({lat, lng}) => {
+          this.props.addDropoffLocation([address, lat, lng])
+          console.log(address,{lat:lat,lng:lng})
+        })
+      
         .catch(error => console.error('Error', error));
     }
 
@@ -73,6 +75,5 @@ const matchDispatchToProps = {
   addDropoffLocation
 }
 
-//export default DropoffLocation
 export default connect(null, matchDispatchToProps)(DropoffLocation)
 
