@@ -4,7 +4,7 @@ import { Nav, Row, Col } from "react-bootstrap";
 
 export default function NavBar() {
     return (
-        <Navbar className='navbar' sticky="top"  expand="lg">
+        <Navbar className='navbar' fixed="top"  expand="lg">
           <Col lg={4}>
           <Navbar.Brand href="#home">
             <img
