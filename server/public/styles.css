@@ -119,3 +119,44 @@ body {
   background-color: #004ea8;
   font-family: raleway;
 }
+
+/* Footer style */
+
+.img-footer {
+    width: 100px;
+    height: auto;
+}
+
+.img-footer:hover {
+    opacity: 0.7;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.navbar a:hover {
+    opacity: 0.7;
+  }
+
+/* Footer Style End */
