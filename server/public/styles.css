@@ -1,0 +1,7 @@
+/* when adding styles please place within a grouping with a header ie all form styles to be kept under /* Form */ 
+
+/* Form */
+.form-title {
+    color: grey;
+    font-size: 2rem;
+}
