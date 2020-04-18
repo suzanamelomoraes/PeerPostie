@@ -3,8 +3,12 @@
 /* Form */
 
 .request-form {
-  width: 344px;
+  /* max-width: 344px; */
   margin: 2rem;
+}
+
+.width {
+    max-width: 355px;
 }
 
 .form-border {
