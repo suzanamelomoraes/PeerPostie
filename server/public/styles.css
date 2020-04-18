@@ -56,3 +56,13 @@
   height: 4rem;
   width: 7rem;
 }
+
+.img-footer {
+  max-width: 60%;
+  height: auto;
+}
+
+.logo {
+    max-width: 20%;
+    height: auto;
+  }
