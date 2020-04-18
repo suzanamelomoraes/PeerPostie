@@ -1,10 +1,20 @@
-import { PICKUP_LOCATION } from '../actions/pickupLocation'
+import { PICKUP_LOCATION, PICKUP_LATLNG } from '../actions/pickupLocation'
 
-export default function dropoffLocation (state = [], action) {
+export default function pickupAddress (state = [], action) {
   switch (action.type) {
     case PICKUP_LOCATION:
       return action.address
 
+    default:
+      return state
+  }
+}
+
+export function pickupLatLng (state = [], action) {
+  switch (action.type) {
+    case PICKUP_LATLNG:
+      return action.latLng
+      
     default:
       return state
   }

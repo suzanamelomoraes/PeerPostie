@@ -17,14 +17,7 @@ export class DropoffLocation extends Component {
 
     handleSelect = address => {
       this.setState({ address })
-    geocodeByAddress(address)
-        .then(results => getLatLng(results[0]))
-        .then(({lat, lng}) => {
-          this.props.addDropoffLocation([address, lat, lng])
-          console.log(address,{lat:lat,lng:lng})
-        })
-      
-        .catch(error => console.error('Error', error));
+      this.props.addDropoffLocation(address)
     }
 
     render () {

@@ -1,11 +1,13 @@
 import { combineReducers } from "redux"
 
 import error from "./error"
-import pickupLocation from './pickupLocation'
-import dropoffLocation from './dropoffLocation'
+import { pickupAddress, pickupLatLng} from './pickupLocation'
+import { dropoffAddress,dropoffLatLng} from './dropoffLocation'
 
 export default combineReducers({
   error,
-  pickupLocation,
-  dropoffLocation
+  pickupLatLng,
+  pickupAddress,
+  dropoffAddress,
+  dropoffLatLng
 })

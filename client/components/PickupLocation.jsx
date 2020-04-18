@@ -17,12 +17,7 @@ export class PickupLocation extends Component {
 
     handleSelect = address => {
       this.setState({ address })
-    geocodeByAddress(address)
-        .then(results => getLatLng(results[0]))
-        .then(({lat, lng}) => {
-        this.props.addPickupLocation([address,lat,lng])
-        })       
-        .catch(error => console.error('Error', error));
+      this.props.addPickupLocation(address)
     }
 
     render () {
