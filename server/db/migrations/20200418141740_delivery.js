@@ -13,6 +13,7 @@ exports.up = knex =>
     table.integer('delivery_user')
     table.integer('price')
     table.string('status')
+    table.text('details')
   })
 
 exports.down = knex => knex.schema.dropTable('delivery')
