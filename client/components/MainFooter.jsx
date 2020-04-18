@@ -1,9 +1,8 @@
 import React from "react";
-
 const MainFooter = () => {
   return (
-    <footer>
-      <div className='container'>
+    <footer >
+      <div className='footer-style'>
         <div className='row'>
           <div className='col md-6'>
             <a href='#'>
@@ -13,7 +12,6 @@ const MainFooter = () => {
                 alt='Peer Postie logo'
               />
             </a>
-
             <ul className='list-inline'>
               <li className='list-inline-item'>
                 <a href='#facebook' class='fa fa-facebook'></a>
@@ -29,20 +27,16 @@ const MainFooter = () => {
               </li>
             </ul>
           </div>
-
-          <div className='navbar col md-6'>
+          <div className='navbar col lg-6'>
             <a href='#about'>
               <span className='text-white small'>About us</span>
             </a>
-
             <a href='#contact'>
               <span className='text-white small'>Contact Us</span>
             </a>
-
             <a href='#term'>
               <span className='text-white small'>Terms & Conditions</span>
             </a>
-
             <a href='#policy'>
               <span className='text-white small'>Privacy Policy</span>
             </a>
@@ -59,5 +53,4 @@ const MainFooter = () => {
     </footer>
   );
 };
-
 export default MainFooter;
