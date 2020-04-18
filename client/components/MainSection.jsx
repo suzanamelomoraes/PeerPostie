@@ -1,6 +1,7 @@
 import React from 'react'
 import { Image, Container } from 'react-bootstrap'
 import HowItWorks from './HowItWorks'
+import FormFields from './FormFields'
 
 class MainSection extends React.Component {
     state = {
@@ -10,9 +11,6 @@ class MainSection extends React.Component {
     render () {
       return (
         <>
-          <nav className="navbar navbar-dark bg-dark" style={{ color: 'white' }}>
-            Pretend nav bar
-          </nav>
           <Container fluid style={{ padding: 0, margin: 0, height: 100 }}>
 
             <Image src="map-dark.jpg" fluid style={{ width: '100%', height: '900%' }} />
@@ -33,6 +31,16 @@ class MainSection extends React.Component {
                 <li style={{ color: '#D9FF00', textDecoration: 'underline' }}><h3>Christchurch</h3></li>
                 <li style={{ color: '#D9FF00', textDecoration: 'underline' }}><h3>Queenstown</h3></li>
               </ul>
+            </Container>
+
+            <Container style={{
+              position: 'absolute',
+              top: '15%',
+              left: '60%',
+              backgroundColor: 'white',
+              width: 450
+            }}>
+              <FormFields />
             </Container>
 
             <Container fluid style={{ padding: 0, margin: 0, height: '100%', backgroundColor: '#00428F' }}>
