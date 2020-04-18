@@ -5,8 +5,8 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('status').insert([
-        {id: 1, colName: 'requesters'},
-        {id: 2, colName: 'deliverers'}
+        {id: 1, requester: 'active'},
+        {id: 2, deliverer: 'active'}
       ]);
     });
 };
