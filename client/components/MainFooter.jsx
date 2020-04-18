@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = () => {
+const MainFooter = () => {
   return (
     <footer>
       <div className='container'>
@@ -13,7 +13,7 @@ const Footer = () => {
                 alt='Peer Postie logo'
               />
             </a>
- ""
+
             <ul className='list-inline'>
               <li className='list-inline-item'>
                 <a href='#facebook' class='fa 6000fa-facebook'></a>
@@ -60,4 +60,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default MainFooter;
