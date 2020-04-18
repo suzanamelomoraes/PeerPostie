@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Form } from "react-bootstrap";
+import PlacesAutocomplete from 'react-places-autocomplete'
+
 
 export default class FormFields extends Component {
   render() {
@@ -16,12 +18,12 @@ export default class FormFields extends Component {
 
           <Form.Group controlId="exampleForm.ControlTextarea1">
             <Form.Label>From</Form.Label>
-            <Form.Control as="textarea" rows="3" />
+            <Form.Control as="textarea" rows="1" />
           </Form.Group>
 
           <Form.Group controlId="exampleForm.ControlTextarea2">
             <Form.Label>To</Form.Label>
-            <Form.Control as="textarea" rows="3" />
+            <Form.Control as="textarea" rows="1"  />
           </Form.Group>
 
           <Form.Group controlId="exampleForm.ControlSelect2">
