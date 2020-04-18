@@ -13,10 +13,10 @@ const Footer = () => {
                 alt='Peer Postie logo'
               />
             </a>
-
+ ""
             <ul className='list-inline'>
               <li className='list-inline-item'>
-                <a href='#facebook' class='fa fa-facebook'></a>
+                <a href='#facebook' class='fa 6000fa-facebook'></a>
               </li>
               <li className='list-inline-item'>
                 <a href='#twitter' class='fa fa-twitter'></a>
