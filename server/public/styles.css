@@ -29,13 +29,33 @@
   border: none;
 }
 
+.calculate-button:hover {
+  color: #004ea8;
+  background-color: #d9ff00;
+  font-weight: bold;
+  width: 305px;
+  height: 60px;
+  border: none;
+  filter: brightness(130%)
+}
+
 .book-button {
   color: white;
-  background-color: CF02BC;
+  background-color: #CF02BC;
   width: 305px;
   height: 60px;
   font-weight: bold;
   border: none;
+}
+
+.book-button:hover {
+  color: white;
+  background-color: #CF02BC;
+  width: 305px;
+  height: 60px;
+  font-weight: bold;
+  border: none;
+  filter: brightness(130%)
 }
 
 .button-group {
