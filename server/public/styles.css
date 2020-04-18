@@ -1,7 +1,58 @@
-/* when adding styles please place within a grouping with a header ie all form styles to be kept under /* Form */ 
+/* when adding styles please place within a grouping with a header ie all form styles to be kept under /* Form */
 
 /* Form */
+
+.request-form {
+  width: 344px;
+  margin: 2rem;
+}
+
+.form-border {
+  border-color: #004ea8;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
 .form-title {
-    color: grey;
-    font-size: 2rem;
+  color: grey;
+  font-size: 2rem;
+  font-family: raleway;
+  padding-bottom: 2rem;
+}
+
+.calculate-button {
+  color: #004ea8;
+  background-color: #d9ff00;
+  font-weight: bold;
+  width: 305px;
+  height: 60px;
+  border: none;
+}
+
+.book-button {
+  color: white;
+  background-color: CF02BC;
+  width: 305px;
+  height: 60px;
+  font-weight: bold;
+  border: none;
+}
+
+.button-group {
+  justify-content: center;
+  text-align: center;
+}
+
+.form-text {
+  color: #004ea8;
+  font-size: 1.5rem;
+}
+
+.no-border {
+  border: 0 0 0 5px;
+}
+
+.button-image {
+  height: 4rem;
+  width: 7rem;
 }
