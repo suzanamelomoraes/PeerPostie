@@ -5,7 +5,7 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('delivery').insert([
-        {id: 1, pick_up: '', deliver_to:'',expected_time:'', package_type:1, request_maker:1, delivery_person:2, prices:1},
+        {id: 1, pick_up: '', deliver_to:'',expected_time:'', package_type:'', request_maker:1, delivery_person:2, prices:1},
       ]);
     });
 };
