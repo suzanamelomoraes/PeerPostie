@@ -1,6 +1,8 @@
 import request from 'superagent'
 
-export function addJob(address){
+const apiURL = 'htts/'
+
+export function addDelivery(deliver){
     return request
     .post()
 }
