@@ -36,12 +36,12 @@
   width: 305px;
   height: 60px;
   border: none;
-  filter: brightness(130%)
+  filter: brightness(130%);
 }
 
 .book-button {
   color: white;
-  background-color: #CF02BC;
+  background-color: #cf02bc;
   width: 305px;
   height: 60px;
   font-weight: bold;
@@ -50,12 +50,12 @@
 
 .book-button:hover {
   color: white;
-  background-color: #CF02BC;
+  background-color: #cf02bc;
   width: 305px;
   height: 60px;
   font-weight: bold;
   border: none;
-  filter: brightness(130%)
+  filter: brightness(130%);
 }
 
 .button-group {
@@ -77,16 +77,47 @@
   width: 7rem;
 }
 
-.img-footer {
-  max-width: 60%;
-  height: auto;
+body {
+  background-color: #004ea8;
 }
 
-.logo {
-    max-width: 20%;
+/* Footer style */
+
+.img-footer {
+    width: 100px;
     height: auto;
+}
+
+.img-footer:hover {
+    opacity: 0.7;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.navbar a:hover {
+    opacity: 0.7;
   }
 
-body{
-  background-color: #004ea8
-}
+/* Footer Style End */
