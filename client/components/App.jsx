@@ -1,8 +1,9 @@
 import React from 'react'
+import FormFields from './FormFields'
 
 const App = () => {
   return (
-    <Form />
+    <FormFields />
   )
 }
 
