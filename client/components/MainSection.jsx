@@ -3,7 +3,7 @@ import { Image, Container } from 'react-bootstrap'
 import HowItWorks from './HowItWorks'
 import FormFields from './FormFields'
 import MainFooter from "./MainFooter";
-import Footer from './Footer'
+
 
 class MainSection extends React.Component {
     state = {
@@ -48,7 +48,7 @@ class MainSection extends React.Component {
 
             <HowItWorks/>
 
-            <Footer />
+            
 
             <MainFooter />
 
