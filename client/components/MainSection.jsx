@@ -26,11 +26,9 @@ class MainSection extends React.Component {
               <h1 style={{ color: 'white', fontSize: '5em' }}>on-demand</h1>
               <h1 style={{ color: 'white', fontSize: '5em' }}>courier</h1>
 
-              <h4 style={{ color: 'white' }}>Where we Operate:</h4>
-              <h3 style={{ color: '#D9FF00', textDecoration: 'underline' }}>Auckland</h3>
-              <h3 style={{ color: '#D9FF00', textDecoration: 'underline' }}>Wellington</h3>
-              <h3 style={{ color: '#D9FF00', textDecoration: 'underline' }}>Christchurch</h3>
-              <h3 style={{ color: '#D9FF00', textDecoration: 'underline' }}>Queenstown</h3>
+              <h4 style={{ color: 'white' }}>Community delivery made easy</h4>
+              
+             
             </Container>
 
             <Container style={{
