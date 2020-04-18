@@ -1,10 +1,14 @@
-import React from 'react'
-import FormFields from './FormFields'
+import React from "react";
+import FormFields from "./FormFields";
+import Footer from "./Footer";
 
 const App = () => {
   return (
-    <FormFields />
-  )
-}
+    <>
+      <FormFields />
+      <Footer />
+    </>
+  );
+};
 
-export default App
+export default App;
