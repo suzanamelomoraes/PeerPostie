@@ -2,6 +2,7 @@ import React from 'react'
 import { Image, Container } from 'react-bootstrap'
 import HowItWorks from './HowItWorks'
 import FormFields from './FormFields'
+import Footer from './Footer'
 
 class MainSection extends React.Component {
     state = {
@@ -25,12 +26,10 @@ class MainSection extends React.Component {
               <h1 style={{ color: 'white', fontSize: '5em' }}>courier</h1>
 
               <h4 style={{ color: 'white' }}>Where we Operate:</h4>
-              <ul style={{ listStyleType: 'none' }}>
-                <li style={{ color: '#D9FF00', textDecoration: 'underline' }}><h3>Auckland</h3></li>
-                <li style={{ color: '#D9FF00', textDecoration: 'underline' }}><h3>Wellington</h3></li>
-                <li style={{ color: '#D9FF00', textDecoration: 'underline' }}><h3>Christchurch</h3></li>
-                <li style={{ color: '#D9FF00', textDecoration: 'underline' }}><h3>Queenstown</h3></li>
-              </ul>
+              <h3 style={{ color: '#D9FF00', textDecoration: 'underline' }}>Auckland</h3>
+              <h3 style={{ color: '#D9FF00', textDecoration: 'underline' }}>Wellington</h3>
+              <h3 style={{ color: '#D9FF00', textDecoration: 'underline' }}>Christchurch</h3>
+              <h3 style={{ color: '#D9FF00', textDecoration: 'underline' }}>Queenstown</h3>
             </Container>
 
             <Container style={{
@@ -47,6 +46,8 @@ class MainSection extends React.Component {
             </Container>
 
             <HowItWorks/>
+
+            <Footer />
 
           </Container>
         </>

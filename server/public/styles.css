@@ -36,7 +36,7 @@
   width: 305px;
   height: 60px;
   border: none;
-  filter: brightness(130%)
+  filter: brightness(105%)
 }
 
 .book-button {
@@ -55,7 +55,7 @@
   height: 60px;
   font-weight: bold;
   border: none;
-  filter: brightness(130%)
+  filter: brightness(110%)
 }
 
 .button-group {
@@ -78,5 +78,6 @@
 }
 
 body{
-  background-color: #004ea8
+  background-color: #004ea8;
+  font-family: raleway
 }
