@@ -25,7 +25,7 @@ Additional components should be placed in `client/components`.
 ## Separate client/server
 
 The client is also set up to be hosted using `webpack-dev-server` with hot module reloading etc. To use this method, in one terminal run:
-```sh
+```shn
 npm run client
 ```
 and in the other:
